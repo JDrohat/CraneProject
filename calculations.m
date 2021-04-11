@@ -16,7 +16,7 @@ minDrumOD = 20*cableDiameter
 cableTension = liveLoadMax / pulleyRatio
 
 %HP = lb*in*RPM / 63024
-motorRPM = motorHP * 63024 / (minDrumOD*.5*cableTension*cableSF)
+motorRPM = motorHP * 63024 / (minDrumOD*.5*cableTension)
 
 cableSpeed = minDrumOD*pi*motorRPM/60 %in/sec
 
