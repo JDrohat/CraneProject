@@ -17,4 +17,4 @@ cableTension = liveLoadMax / pulleyRatio
 motorRPM = motorHP * 63024 / (minDrumOD*.5*cableTension*cableSF)
 
 J = (pi/32) * minDrumOD^4
-TorsionalShearStress = (cableTension* cableSF * minDrumOD/2)/J
+TorsionalShearStress = (cableTension* cableSF * (minDrumOD/2))/J
