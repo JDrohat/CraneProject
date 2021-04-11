@@ -12,7 +12,9 @@ cableDiameter = sqrt(cableSF*liveLoadMax *4 / (pulleyRatio * cableUT * pi))
 
 minDrumOD = 20*cableDiameter
 
-cableTension = liveLoadMax / pulleyRatio
+cableTension = cableSF * liveLoadMax / pulleyRatio
 
 motorRPM = motorHP * 63024 / (minDrumOD*.5*cableTension)
 
+J = (pi/32) * midDrumOD^4
+TorsionalShearStress = (cableTension * minDrumOD/2)/J
